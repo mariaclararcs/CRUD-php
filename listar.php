@@ -1,3 +1,11 @@
+<?php
+$database = new PDO("mysql:host=localhost; dbname=amazon", "root", "");
+$sql = "SELECT * FROM users";
+$comando = $database->prepare($sql);
+$comando->execute();
+$listar = $comando->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +27,17 @@
             </tr>
         </thead>
         <tbody>
+            <?php
+            foreach ($listar as $list) {
+            ?>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?php echo $list['name']; ?></td>
+                <td><?php echo $list['password']; ?></td>
+                <td><?php echo $list['email']; ?></td>
             </tr>
+            <?php
+            }
+            ?>
         </tbody>
     </table>
 </body>

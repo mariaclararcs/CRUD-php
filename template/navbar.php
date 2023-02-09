@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Criar</a>
+          <a class="nav-link active" aria-current="page" href="criar.php">Criar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Alterar</a>
+          <a class="nav-link active" aria-current="page" href="editar.php">Alterar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Ler</a>
+          <a class="nav-link active" aria-current="page" href="listar.php">Ler</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Deletar</a>
